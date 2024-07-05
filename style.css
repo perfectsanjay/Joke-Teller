@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    margin:0px;
+    /* background:url('robot.gif'); */
+    background:#45badd;
+
+  
+}
+
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    flex-direction:column;
+    margin:5px;
+    background:url('robot.gif');
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:left center;
+
+
+}
+
+button{
+    cursor:pointer;
+    margin:10px;
+    padding:20px 20px;
+    font-family: "Noto Sans", sans-serif;
+    background: #ff3482;
+    border-radius:5px;
+    outline: None;
+    font-size:20px;
+    box-shadow: 5px 5px 5px  rgb(170, 51, 106);
+    text-shadow: 2px 2px 1px  rgba(0, 0, 0, 0.3)
+}
+button:hover{
+    filter:brightness(130px)
+    
+}
+button:active{
+    transform: scale(0.98);
+}
+
+@media screen and (max-width:1000px){
+    .container{
+        background-position: center center;
+        background-size:cover;
+    }
+}
